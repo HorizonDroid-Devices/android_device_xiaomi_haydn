@@ -21,6 +21,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libshim_megvii
 
+# FaceSense
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.face.sense_service.camera_id=1
+
 # Init
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.haydn.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.haydn.rc
