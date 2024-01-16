@@ -23,4 +23,13 @@ wget https://raw.githubusercontent.com/xiaomi-haydn-devs/Patch-Haydn/14/VoNR/000
 patch -p1 <0001-Enable-VoNR-by-default.patch
 cd ../..
 
+# Gms
+echo 'Adding Gms patch'
+cd frameworks/base
+wget https://raw.githubusercontent.com/xiaomi-haydn-devs/Patch-Haydn/14/Gms/0001-SettingsProvider-Resolve-google-gms-configurator-denials.patch
+wget https://raw.githubusercontent.com/xiaomi-haydn-devs/Patch-Haydn/14/Gms/0002-Remove-read-device-config-checks.patch
+patch -p1 <0001-SettingsProvider-Resolve-google-gms-configurator-denials.patch
+patch -p1 <0002-Remove-read-device-config-checks.patch
+cd ../..
+
 echo 'delete vendorsetup.sh from device tree once this is done'
