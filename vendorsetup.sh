@@ -16,4 +16,11 @@ wget https://raw.githubusercontent.com/xiaomi-haydn-devs/Patch-Haydn/14/Audio-ap
 patch -p1 <0001-Add-audio-app-support.patch
 cd ../..
 
+# VoNR
+echo 'Enabling VoNR by default'
+cd frameworks/base
+wget https://raw.githubusercontent.com/xiaomi-haydn-devs/Patch-Haydn/14/VoNR/0001-Enable-VoNR-by-default.patch
+patch -p1 <0001-Enable-VoNR-by-default.patch
+cd ../..
+
 echo 'delete vendorsetup.sh from device tree once this is done'
