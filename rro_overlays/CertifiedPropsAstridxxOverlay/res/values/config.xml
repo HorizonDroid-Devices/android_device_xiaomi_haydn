@@ -16,5 +16,5 @@
     </string-array>
 
     <!-- Build fingerprint from stock ROM -->
-    <string name="config_stockFingerprint" translatable="false">Xiaomi/haydn_global/haydn:13/TKQ1.220829.002/V14.0.5.0.TKKMIXM:user/release-keys</string>
+    <string name="config_stockFingerprint" translatable="false">Xiaomi/haydn_global/haydn:13/TKQ1.220829.002/V14.0.7.0.TKKMIXM:user/release-keys</string>
 </resources>
