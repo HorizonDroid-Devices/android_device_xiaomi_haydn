@@ -36,7 +36,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Overlays-RRO
 PRODUCT_PACKAGES += \
-    CertifiedPropsAstridxxOverlay \
     HaydnCNSettingsProviderOverlay \
     HaydnCNWifiOverlay \
     HaydnGLSettingsProviderOverlay \

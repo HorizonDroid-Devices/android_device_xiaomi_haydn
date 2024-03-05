@@ -337,20 +337,6 @@
         <item>53</item>
     </integer-array>
 
-    <!-- Build properties from a GMS certified device against current platform SPL level -->
-    <string-array name="config_certifiedBuildProperties" translatable="false">
-        <item>PRODUCT:angler</item>
-        <item>DEVICE:angler</item>
-        <item>MANUFACTURER:Huawei</item>
-        <item>BRAND:google</item>
-        <item>MODEL:Nexus 6P</item>
-        <item>FINGERPRINT:google/angler/angler:7.0/NPD90G/3051502:user/release-keys</item>
-        <item>VERSION.SECURITY_PATCH:2016-07-05</item>
-    </string-array>
-
-    <!-- Build fingerprint from stock ROM -->
-    <string name="config_stockFingerprint" translatable="false">Xiaomi/haydn_global/haydn:13/TKQ1.220829.002/V14.0.7.0.TKKMIXM:user/release-keys</string>
-
     <!-- The default refresh rate. haydn manages this using the peak refresh rate setting, so set
          this value to 0 so it has no effect. -->
     <integer name="config_defaultRefreshRate">0</integer>
