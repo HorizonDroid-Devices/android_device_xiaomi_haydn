@@ -2,7 +2,7 @@ echo 'Starting to clone stuffs needed to build for Haydn'
 
 # Device common
 echo 'Cloning common device tree'
-git clone https://github.com/xiaomi-haydn-devs/android_device_xiaomi_sm8350-common -b PixelOS-14 device/xiaomi/sm8350-common
+git clone https://github.com/xiaomi-haydn-devs/android_device_xiaomi_sm8350-common -b HorizonDroid device/xiaomi/sm8350-common
 
 # Kernel
 echo 'Cloning kernel tree'
@@ -18,7 +18,7 @@ git clone https://github.com/xiaomi-haydn-devs/proprietary_vendor_xiaomi_sm8350-
 
 # Xiaomi
 echo 'Cloning hardware xiaomi'
-rm -rf hardware/xiaomi && git clone --depth=1 https://github.com/LineageOS/android_hardware_xiaomi -b lineage-21 hardware/xiaomi
+git clone --depth=1 https://github.com/LineageOS/android_hardware_xiaomi -b lineage-21 hardware/xiaomi
 
 # Firmware
 echo 'Cloning firmware'
@@ -55,8 +55,8 @@ cd ../..
 # Dolby
 echo 'Adding Dolby patch'
 cd frameworks/av
-wget https://raw.githubusercontent.com/xiaomi-haydn-devs/Patch-Haydn/udc-14/Dolby/0003-media-OMXStore-Import-loading-libstagefrightdolby.patch
-wget https://raw.githubusercontent.com/xiaomi-haydn-devs/Patch-Haydn/udc-14/Dolby/0004-Import-Dolby-Effects-initialization.patch
+wget https://raw.githubusercontent.com/xiaomi-haydn-devs/Patch-Haydn/14/Dolby/0003-media-OMXStore-Import-loading-libstagefrightdolby.patch
+wget https://raw.githubusercontent.com/xiaomi-haydn-devs/Patch-Haydn/14/Dolby/0004-Import-Dolby-Effects-initialization.patch
 patch -p1 <0003-media-OMXStore-Import-loading-libstagefrightdolby.patch
 patch -p1 <0004-Import-Dolby-Effects-initialization.patch
 cd ../..

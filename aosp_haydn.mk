@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from haydn device
 $(call inherit-product, device/xiaomi/haydn/device.mk)
 
-# Inherit some common PixelOS stuff.
+# Inherit some common HorizonDroid stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 PRODUCT_BRAND := Xiaomi
@@ -23,8 +23,9 @@ PRODUCT_NAME := aosp_haydn
 PRODUCT_SYSTEM_NAME := haydn_global
 PRODUCT_SYSTEM_DEVICE := haydn
 
-# PixelOS
+# HorizonDroid
 TARGET_BOOT_ANIMATION_RES := 1080
+HORIZON_MAINTAINER := Akshay
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="haydn_global-user 13 TKQ1.220829.002 V14.0.7.0.TKKMIXM release-keys" \
